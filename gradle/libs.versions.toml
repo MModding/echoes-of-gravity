@@ -5,6 +5,7 @@ quilt_mappings = "1.18.2+build.23"
 quilt_loader = "0.16.0-beta.16"
 
 quilted_fabric_api = "1.0.0-beta.13+0.51.1-1.18.2"
+mmodding_lib = "3978e3fa8c"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
@@ -13,6 +14,7 @@ quilt_loader = { module = "org.quiltmc:quilt-loader", version.ref = "quilt_loade
 
 # Dependencies
 quilted_fabric_api = { module = "org.quiltmc.quilted-fabric-api:quilted-fabric-api", version.ref = "quilted_fabric_api" }
+mmodding_lib = { module = "com.github.MModding:MModding-Library", version.ref = "mmodding_lib" }
 
 [plugins]
 quilt_loom = { id = "org.quiltmc.loom", version = "0.12.+" }
