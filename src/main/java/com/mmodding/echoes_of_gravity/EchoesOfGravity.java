@@ -23,6 +23,7 @@ public class EchoesOfGravity implements MModdingModInitializer {
 		List<ElementsInitializer> initializers = new ArrayList<>();
 		initializers.add(new Blocks());
 		initializers.add(new Items());
+		initializers.add(new Structures());
 		return initializers;
 	}
 
@@ -30,6 +31,5 @@ public class EchoesOfGravity implements MModdingModInitializer {
 	public void onInitialize(ModContainer mod) {
 		MModdingModInitializer.super.onInitialize(mod);
 		EchoesOfGravity.mod = mod;
-		Structures.registerStructureFeatures();
 	}
 }
