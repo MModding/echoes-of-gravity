@@ -8,11 +8,18 @@ import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 
 public class Blocks implements ElementsInitializer {
 
-	public static final CustomBlock DRAGON_PEDESTAL_BLOCK = new CustomBlock(QuiltBlockSettings.of(Material.STONE), true);
+	public static final CustomBlock GRAVITY_PEDESTAL = new CustomBlock(
+			QuiltBlockSettings.of(Material.STONE).hardness(-1), true, Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
+	);
+
+	public static final CustomBlock ENERGY_EXTRACTOR = new CustomBlock(
+			QuiltBlockSettings.of(Material.METAL).hardness(-1), true, Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
+	);
 
 	@Override
 	public void register() {
-		DRAGON_PEDESTAL_BLOCK.register(Utils.newIdentifier("dragon_pedestal_block"));
+		GRAVITY_PEDESTAL.register(Utils.newIdentifier("gravity_pedestal"));
+		ENERGY_EXTRACTOR.register(Utils.newIdentifier("energy_extractor"));
 	}
 
 }

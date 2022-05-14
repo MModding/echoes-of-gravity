@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "echoes_of_gravity:block/energy_extractor" }
+  }
+}
