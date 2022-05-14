@@ -1,5 +1,6 @@
 package com.mmodding.echoes_of_gravity.structures;
 
+import com.mmodding.mmodding_lib.lib.structures.CustomStructure;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.structure.PostPlacementProcessor;
@@ -8,12 +9,11 @@ import net.minecraft.structure.StructurePiecesGeneratorFactory;
 import net.minecraft.structure.piece.PoolStructurePiece;
 import net.minecraft.structure.pool.StructurePool;
 import net.minecraft.structure.pool.StructurePoolBasedGenerator;
-import net.minecraft.world.gen.feature.StructureFeature;
 import net.minecraft.world.gen.feature.StructurePoolFeatureConfig;
 
 import java.util.Optional;
 
-public class OldDragonMonument extends StructureFeature<StructurePoolFeatureConfig> {
+public class OldDragonMonument extends CustomStructure<StructurePoolFeatureConfig> {
 
 	public static final Codec<StructurePoolFeatureConfig> CODEC = RecordCodecBuilder.create(
 			instance -> instance.group(
