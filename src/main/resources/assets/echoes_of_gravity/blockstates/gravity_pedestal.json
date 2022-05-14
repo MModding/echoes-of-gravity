@@ -1,5 +1,10 @@
 {
   "variants": {
-    "": { "model": "echoes_of_gravity:block/gravity_pedestal" }
+    "has_dragon_egg=true": {
+      "model": "echoes_of_gravity:block/gravity_pedestal_enabled"
+    },
+    "has_dragon_egg=false": {
+      "model": "echoes_of_gravity:block/gravity_pedestal"
+    }
   }
 }
