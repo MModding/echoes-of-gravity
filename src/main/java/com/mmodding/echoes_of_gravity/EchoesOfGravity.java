@@ -2,6 +2,7 @@ package com.mmodding.echoes_of_gravity;
 
 import com.mmodding.echoes_of_gravity.init.Blocks;
 import com.mmodding.echoes_of_gravity.init.Items;
+import com.mmodding.echoes_of_gravity.init.Structures;
 import com.mmodding.mmodding_lib.lib.base.MModdingModInitializer;
 import com.mmodding.mmodding_lib.lib.initializers.ElementsInitializer;
 import org.quiltmc.loader.api.ModContainer;
@@ -29,6 +30,6 @@ public class EchoesOfGravity implements MModdingModInitializer {
 	public void onInitialize(ModContainer mod) {
 		MModdingModInitializer.super.onInitialize(mod);
 		EchoesOfGravity.mod = mod;
+		Structures.registerStructureFeatures();
 	}
-
 }
