@@ -4,6 +4,7 @@ import com.mmodding.echoes_of_gravity.Utils;
 import com.mmodding.echoes_of_gravity.entities.OldDragonLightningEntity;
 import com.mmodding.mmodding_lib.lib.entities.CustomEntityType;
 import com.mmodding.mmodding_lib.lib.initializers.ElementsInitializer;
+import com.mmodding.mmodding_lib.lib.utils.RegistrationUtils;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.SpawnGroup;
@@ -16,6 +17,6 @@ public class Entities implements ElementsInitializer {
 
 	@Override
 	public void register() {
-		OLD_DRAGON_LIGHTNING.register(Utils.newIdentifier("old_dragon_lightning"));
+		RegistrationUtils.registerEntityType(Utils.newIdentifier("old_dragon_lightning"), OLD_DRAGON_LIGHTNING);
 	}
 }
