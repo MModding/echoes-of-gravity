@@ -5,5 +5,7 @@
     "size": 1
   },
   "biomes": "#echoes_of_gravity:has_structure/old_dragon_monument",
-  "adapt_noise": true
+  "adapt_noise": true,
+  "spawn_overrides": {
+  }
 }
