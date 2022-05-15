@@ -9,6 +9,7 @@ import net.minecraft.structure.StructurePiecesGeneratorFactory;
 import net.minecraft.structure.piece.PoolStructurePiece;
 import net.minecraft.structure.pool.StructurePool;
 import net.minecraft.structure.pool.StructurePoolBasedGenerator;
+import net.minecraft.util.math.ChunkPos;
 import net.minecraft.world.gen.feature.StructurePoolFeatureConfig;
 
 import java.util.Optional;
@@ -27,10 +28,7 @@ public class OldDragonMonument extends CustomStructure<StructurePoolFeatureConfi
 	}
 
 	private static boolean isFeatureChunk(StructurePiecesGeneratorFactory.Context<StructurePoolFeatureConfig> context) {
-		boolean flag = 100000 >= context.chunkPos().getStartX() && 100000 <= context.chunkPos().getEndX();
-		boolean flag1 = 100000 >= context.chunkPos().getStartZ() && 100000 <= context.chunkPos().getEndZ();
-
-		return flag && flag1;
+		return context.chunkPos().equals(new ChunkPos(625, 625));
 	}
 
 	public static Optional<StructurePiecesGenerator<StructurePoolFeatureConfig>> createPiecesGenerator(StructurePiecesGeneratorFactory.Context<StructurePoolFeatureConfig> context) {
