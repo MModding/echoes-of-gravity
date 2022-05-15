@@ -10,7 +10,7 @@ import net.minecraft.entity.SpawnGroup;
 
 public class Entities implements ElementsInitializer {
 
-	public static final CustomEntityType<?> OLD_DRAGON_LIGHTNING = (CustomEntityType<?>) FabricEntityTypeBuilder
+	public static final CustomEntityType<OldDragonLightningEntity> OLD_DRAGON_LIGHTNING = (CustomEntityType<OldDragonLightningEntity>) FabricEntityTypeBuilder
 			.create(SpawnGroup.MISC, OldDragonLightningEntity::new).disableSaving().dimensions(EntityDimensions.fixed(0.0F, 0.0F))
 			.trackRangeBlocks(16).trackedUpdateRate(Integer.MAX_VALUE).build();
 
