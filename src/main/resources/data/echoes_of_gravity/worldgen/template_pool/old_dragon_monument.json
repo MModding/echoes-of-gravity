@@ -1,0 +1,15 @@
+{
+  "name": "echoes_of_gravity:old_dragon_monument",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "echoes_of_gravity:old_dragon_monument",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
