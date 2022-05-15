@@ -21,7 +21,7 @@
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
 			"init": "com.mmodding.echoes_of_gravity.EchoesOfGravity",
-			"client": "com.mmodding.echoes_of_gravity.EchoesOfGravityClient"
+			"client": "com.mmodding.echoes_of_gravity.client.EchoesOfGravityClient"
 		},
 		"depends": [
 			{
