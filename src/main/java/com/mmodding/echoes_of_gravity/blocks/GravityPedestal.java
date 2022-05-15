@@ -13,7 +13,7 @@ import net.minecraft.world.WorldAccess;
 
 public class GravityPedestal extends CustomBlock {
 
-	public static final BooleanProperty HAS_DRAGON_EGG;
+	public static final BooleanProperty HAS_DRAGON_EGG = BooleanProperty.of("has_dragon_egg");
 
 	public GravityPedestal(Settings settings, boolean hasItem, ItemGroup itemGroup) {
 		super(settings, hasItem, itemGroup);
@@ -22,20 +22,11 @@ public class GravityPedestal extends CustomBlock {
 
 	@Override
 	public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
-		if (world.getBlockState(new BlockPos(pos.getX(), pos.getY() + 1, pos.getZ())).getBlock() instanceof DragonEggBlock) {
-			return this.getDefaultState().with(HAS_DRAGON_EGG, true);
-		}
-		else {
-			return this.getDefaultState().with(HAS_DRAGON_EGG, false);
-		}
+		return this.getDefaultState().with(HAS_DRAGON_EGG, world.getBlockState(pos.up()).getBlock() instanceof DragonEggBlock);
 	}
 
 	@Override
 	protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
 		builder.add(HAS_DRAGON_EGG);
-	}
-
-	static {
-		HAS_DRAGON_EGG = BooleanProperty.of("has_dragon_egg");
 	}
 }

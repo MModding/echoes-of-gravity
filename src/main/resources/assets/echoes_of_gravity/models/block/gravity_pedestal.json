@@ -1,6 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "echoes_of_gravity:block/gravity_pedestal"
+    "up": "echoes_of_gravity:block/gravity_pedestal_top",
+    "down": "echoes_of_gravity:block/gravity_pedestal_side",
+    "north": "echoes_of_gravity:block/gravity_pedestal_side",
+    "south": "echoes_of_gravity:block/gravity_pedestal_side",
+    "west": "echoes_of_gravity:block/gravity_pedestal_side",
+    "east": "echoes_of_gravity:block/gravity_pedestal_side",
+    "particle": "echoes_of_gravity:block/gravity_pedestal_side"
   }
 }
