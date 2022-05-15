@@ -1,6 +1,7 @@
 package com.mmodding.echoes_of_gravity;
 
 import com.mmodding.echoes_of_gravity.init.Blocks;
+import com.mmodding.echoes_of_gravity.init.Entities;
 import com.mmodding.echoes_of_gravity.init.Items;
 import com.mmodding.echoes_of_gravity.init.Structures;
 import com.mmodding.mmodding_lib.lib.base.MModdingModInitializer;
@@ -23,6 +24,7 @@ public class EchoesOfGravity implements MModdingModInitializer {
 		List<ElementsInitializer> initializers = new ArrayList<>();
 		initializers.add(new Blocks());
 		initializers.add(new Items());
+		initializers.add(new Entities());
 		initializers.add(new Structures());
 		return initializers;
 	}
