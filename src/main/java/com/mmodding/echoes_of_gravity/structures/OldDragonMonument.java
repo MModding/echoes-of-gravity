@@ -28,7 +28,7 @@ public class OldDragonMonument extends CustomStructure<StructurePoolFeatureConfi
 	}
 
 	private static boolean isFeatureChunk(StructurePiecesGeneratorFactory.Context<StructurePoolFeatureConfig> context) {
-		return context.chunkPos().equals(new ChunkPos(625, 625));
+		return context.chunkPos().equals(new ChunkPos(6250, 6250));
 	}
 
 	public static Optional<StructurePiecesGenerator<StructurePoolFeatureConfig>> createPiecesGenerator(StructurePiecesGeneratorFactory.Context<StructurePoolFeatureConfig> context) {
