@@ -31,18 +31,6 @@ public class GravityPedestal extends CustomBlock {
 	}
 
 	@Override
-	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-
-		BiomeUtils.changeBiomeForBlock(
-				pos.up(50),
-				world.getChunk(pos.up(50)).getSection(ChunkSectionPos.from(pos.up(50)).getY()),
-				world.getRegistryManager().get(Registry.BIOME_KEY).get(new Identifier("minecraft:plains"))
-		);
-
-		return ActionResult.SUCCESS;
-	}
-
-	@Override
 	public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
 		return this.getDefaultState().with(HAS_DRAGON_EGG, world.getBlockState(pos.up()).getBlock() instanceof DragonEggBlock);
 	}
