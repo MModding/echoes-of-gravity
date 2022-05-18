@@ -35,10 +35,6 @@
 			{
 				"id": "minecraft",
 				"versions": ">=1.18.2"
-			},
-			{
-				"id": "mmodding_lib",
-				"versions": ">=0.0.1-alpha"
 			}
 		]
 	},

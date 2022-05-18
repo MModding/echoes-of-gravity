@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "echoes_of_gravity:block/reinforced_gravity_block" }
+  }
+}
