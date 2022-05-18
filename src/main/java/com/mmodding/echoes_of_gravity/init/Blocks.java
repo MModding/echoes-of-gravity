@@ -13,11 +13,19 @@ import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 public class Blocks implements ElementsInitializer, ClientElementsInitializer {
 
 	public static final CustomBlock GRAVITY_PEDESTAL = new GravityPedestal(
-			QuiltBlockSettings.of(Material.STONE).strength(-1, 3600000), true, Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
+			QuiltBlockSettings.of(Material.STONE)
+					.strength(-1, 3600000)
+					.luminance(state -> {if (state.get(GravityPedestal.HAS_DRAGON_EGG)) return 10; else return 0;}),
+			true,
+			Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
 	);
 
 	public static final CustomBlock ENERGY_EXTRACTOR = new EnergyExtractor(
-			QuiltBlockSettings.of(Material.METAL).strength(-1, 3600000), true, Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
+			QuiltBlockSettings.of(Material.METAL)
+					.strength(-1, 3600000)
+					.luminance(state -> {if (state.get(EnergyExtractor.WORKING)) return 10; else return 0;}),
+			true,
+			Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
 	);
 
 	public static final CustomBlock REINFORCED_GRAVITY_BLOCK = new CustomBlock(
