@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "_comment": "Biome tag gathering all Minecraft biome tags",
+  "values": [
+    "#minecraft:is_badlands",
+    "#minecraft:is_beach",
+    "#minecraft:is_deep_ocean",
+    "#minecraft:is_forest",
+    "#minecraft:is_hill",
+    "#minecraft:is_jungle",
+    "#minecraft:is_mountain",
+    "#minecraft:is_ocean",
+    "#minecraft:is_river",
+    "#minecraft:is_taiga",
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:snowy_plains",
+    "minecraft:ice_spikes",
+    "minecraft:desert",
+    "minecraft:swamp",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:windswept_savanna",
+    "minecraft:stony_shore",
+    "minecraft:mushroom_fields",
+    "minecraft:dripstone_caves",
+    "minecraft:lush_caves"
+  ]
+}
