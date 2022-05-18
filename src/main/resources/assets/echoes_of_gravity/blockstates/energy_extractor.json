@@ -1,5 +1,50 @@
 {
   "variants": {
-    "": { "model": "echoes_of_gravity:block/energy_extractor" }
+    "facing=up,working=false": {
+      "model": "echoes_of_gravity:block/energy_extractor",
+      "x": 270
+    },
+    "facing=down,working=false": {
+      "model": "echoes_of_gravity:block/energy_extractor",
+      "x": 90
+    },
+    "facing=north,working=false": {
+      "model": "echoes_of_gravity:block/energy_extractor"
+    },
+    "facing=east,working=false": {
+      "model": "echoes_of_gravity:block/energy_extractor",
+      "y": 90
+    },
+    "facing=south,working=false": {
+      "model": "echoes_of_gravity:block/energy_extractor",
+      "y": 180
+    },
+    "facing=west,working=false": {
+      "model": "echoes_of_gravity:block/energy_extractor",
+      "y": 270
+    },
+    "facing=up,working=true": {
+      "model": "echoes_of_gravity:block/energy_extractor_working",
+      "x": 270
+    },
+    "facing=down,working=true": {
+      "model": "echoes_of_gravity:block/energy_extractor_working",
+      "x": 90
+    },
+    "facing=north,working=true": {
+      "model": "echoes_of_gravity:block/energy_extractor_working"
+    },
+    "facing=east,working=true": {
+      "model": "echoes_of_gravity:block/energy_extractor_working",
+      "y": 90
+    },
+    "facing=south,working=true": {
+      "model": "echoes_of_gravity:block/energy_extractor_working",
+      "y": 180
+    },
+    "facing=west,working=true": {
+      "model": "echoes_of_gravity:block/energy_extractor_working",
+      "y": 270
+    }
   }
 }

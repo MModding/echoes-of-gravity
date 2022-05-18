@@ -1,6 +1,7 @@
 package com.mmodding.echoes_of_gravity.init;
 
 import com.mmodding.echoes_of_gravity.Utils;
+import com.mmodding.echoes_of_gravity.blocks.EnergyExtractor;
 import com.mmodding.echoes_of_gravity.blocks.GravityPedestal;
 import com.mmodding.mmodding_lib.lib.blocks.CustomBlock;
 import com.mmodding.mmodding_lib.lib.blocks.CustomStairsBlock;
@@ -15,7 +16,7 @@ public class Blocks implements ElementsInitializer, ClientElementsInitializer {
 			QuiltBlockSettings.of(Material.STONE).strength(-1, 3600000), true, Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
 	);
 
-	public static final CustomBlock ENERGY_EXTRACTOR = new CustomBlock(
+	public static final CustomBlock ENERGY_EXTRACTOR = new EnergyExtractor(
 			QuiltBlockSettings.of(Material.METAL).strength(-1, 3600000), true, Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
 	);
 
