@@ -15,7 +15,7 @@ public class Blocks implements ElementsInitializer, ClientElementsInitializer {
 	public static final CustomBlock GRAVITY_PEDESTAL = new GravityPedestal(
 			QuiltBlockSettings.of(Material.STONE)
 					.strength(-1, 3600000)
-					.luminance(state -> {if (state.get(GravityPedestal.HAS_DRAGON_EGG)) return 10; else return 0;}),
+					.luminance(state -> state.get(GravityPedestal.HAS_DRAGON_EGG) ? 10 : 0),
 			true,
 			Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
 	);
@@ -23,7 +23,7 @@ public class Blocks implements ElementsInitializer, ClientElementsInitializer {
 	public static final CustomBlock ENERGY_EXTRACTOR = new EnergyExtractor(
 			QuiltBlockSettings.of(Material.METAL)
 					.strength(-1, 3600000)
-					.luminance(state -> {if (state.get(EnergyExtractor.WORKING)) return 10; else return 0;}),
+					.luminance(state -> state.get(EnergyExtractor.WORKING) ? 10 : 0),
 			true,
 			Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
 	);
