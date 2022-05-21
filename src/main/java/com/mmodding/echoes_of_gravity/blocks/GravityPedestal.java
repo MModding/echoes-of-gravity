@@ -1,8 +1,6 @@
 package com.mmodding.echoes_of_gravity.blocks;
 
-import com.mmodding.echoes_of_gravity.EchoesOfGravity;
 import com.mmodding.echoes_of_gravity.Utils;
-import com.mmodding.echoes_of_gravity.init.Biomes;
 import com.mmodding.echoes_of_gravity.init.Blocks;
 import com.mmodding.mmodding_lib.lib.blocks.CustomBlock;
 import com.mmodding.mmodding_lib.lib.utils.BiomeUtils;
@@ -10,19 +8,16 @@ import com.mmodding.mmodding_lib.lib.utils.RadiusUtils;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.DragonEggBlock;
-import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 
