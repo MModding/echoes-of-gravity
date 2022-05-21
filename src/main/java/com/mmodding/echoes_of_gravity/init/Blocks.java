@@ -3,6 +3,7 @@ package com.mmodding.echoes_of_gravity.init;
 import com.mmodding.echoes_of_gravity.Utils;
 import com.mmodding.echoes_of_gravity.blocks.EnergyExtractor;
 import com.mmodding.echoes_of_gravity.blocks.GravityPedestal;
+import com.mmodding.echoes_of_gravity.blocks.ReinforcedGravityBlock;
 import com.mmodding.mmodding_lib.lib.blocks.CustomBlock;
 import com.mmodding.mmodding_lib.lib.blocks.CustomStairsBlock;
 import com.mmodding.mmodding_lib.lib.initializers.ClientElementsInitializer;
@@ -28,7 +29,7 @@ public class Blocks implements ElementsInitializer, ClientElementsInitializer {
 			Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
 	);
 
-	public static final CustomBlock REINFORCED_GRAVITY_BLOCK = new CustomBlock(
+	public static final CustomBlock REINFORCED_GRAVITY_BLOCK = new ReinforcedGravityBlock(
 			QuiltBlockSettings.of(Material.STONE)
 					.strength(-1, 3600000)
 					.luminance(5)
@@ -57,6 +58,9 @@ public class Blocks implements ElementsInitializer, ClientElementsInitializer {
 
 	@Override
 	public void registerClient() {
+		REINFORCED_GRAVITY_BLOCK.cutout();
+		REINFORCED_GRAVITY_STAIRS.cutout();
+
 		REINFORCED_GRAVITY_BLOCK.translucent();
 		REINFORCED_GRAVITY_STAIRS.translucent();
 	}

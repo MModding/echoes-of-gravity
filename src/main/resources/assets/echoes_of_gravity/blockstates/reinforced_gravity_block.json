@@ -1,5 +1,10 @@
 {
   "variants": {
-    "": { "model": "echoes_of_gravity:block/reinforced_gravity_block" }
+    "gravity_isolation=true": {
+      "model": "echoes_of_gravity:block/reinforced_gravity_block"
+    },
+    "gravity_isolation=false": {
+      "model": "block/air"
+    }
   }
 }
