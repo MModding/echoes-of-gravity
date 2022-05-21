@@ -1,6 +1,7 @@
 package com.mmodding.echoes_of_gravity.blocks;
 
 import com.mmodding.echoes_of_gravity.EchoesOfGravity;
+import com.mmodding.echoes_of_gravity.Utils;
 import com.mmodding.echoes_of_gravity.init.Biomes;
 import com.mmodding.echoes_of_gravity.init.Blocks;
 import com.mmodding.mmodding_lib.lib.blocks.CustomBlock;
@@ -20,15 +21,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.Range;
-import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.world.BlockView;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
-
-import java.util.List;
-import java.util.stream.IntStream;
-
 
 public class GravityPedestal extends CustomBlock {
 
@@ -42,11 +38,9 @@ public class GravityPedestal extends CustomBlock {
 	@Override
 	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
 
-		for (int x = 0; x < 20; x++) {
-			for (int z = 0; z < 20; z++) {
-				BiomeUtils.changeBiomeForBlock(world, pos.north(x).west(z), Biomes.GRAVITY_SPACE);
-			}
-		}
+		RadiusUtils.forBlockPosInCubicRadius(pos, 10, (blockPos) -> {
+			BiomeUtils.changeBiomeForBlock(world, blockPos, world.getRegistryManager().get(Registry.BIOME_KEY).get(Utils.newIdentifier("gravity_space")));
+		});
 
 		return ActionResult.SUCCESS;
 	}
