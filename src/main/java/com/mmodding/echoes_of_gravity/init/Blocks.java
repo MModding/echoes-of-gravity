@@ -29,12 +29,22 @@ public class Blocks implements ElementsInitializer, ClientElementsInitializer {
 	);
 
 	public static final CustomBlock REINFORCED_GRAVITY_BLOCK = new CustomBlock(
-			QuiltBlockSettings.of(Material.STONE).strength(-1, 3600000), true, Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
+			QuiltBlockSettings.of(Material.STONE)
+					.strength(-1, 3600000)
+					.luminance(5)
+					.nonOpaque(),
+			true,
+			Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
 	);
 
 	public static final CustomStairsBlock REINFORCED_GRAVITY_STAIRS = new CustomStairsBlock(
 			REINFORCED_GRAVITY_BLOCK.getDefaultState(),
-			QuiltBlockSettings.of(Material.METAL).strength(-1, 3600000), true, Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
+			QuiltBlockSettings.of(Material.METAL)
+					.strength(-1, 3600000)
+					.luminance(5)
+					.nonOpaque(),
+			true,
+			Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
 	);
 
 	@Override
@@ -47,7 +57,7 @@ public class Blocks implements ElementsInitializer, ClientElementsInitializer {
 
 	@Override
 	public void registerClient() {
-		REINFORCED_GRAVITY_BLOCK.cutout();
-		REINFORCED_GRAVITY_STAIRS.cutout();
+		REINFORCED_GRAVITY_BLOCK.translucent();
+		REINFORCED_GRAVITY_STAIRS.translucent();
 	}
 }
