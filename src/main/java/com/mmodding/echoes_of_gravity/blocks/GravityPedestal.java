@@ -1,7 +1,6 @@
 package com.mmodding.echoes_of_gravity.blocks;
 
 import com.mmodding.echoes_of_gravity.Utils;
-import com.mmodding.echoes_of_gravity.init.Biomes;
 import com.mmodding.echoes_of_gravity.init.Blocks;
 import com.mmodding.mmodding_lib.lib.blocks.CustomBlock;
 import com.mmodding.mmodding_lib.lib.utils.BiomeUtils;
@@ -18,7 +17,6 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 
@@ -34,7 +32,11 @@ public class GravityPedestal extends CustomBlock {
 	@Override
 	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
 
-		RadiusUtils.forBlockPosInCubicRadius(pos, 10, (blockPos) -> BiomeUtils.changeBiomeForBlock(world, blockPos, world.getRegistryManager().get(Registry.BIOME_KEY).get(Utils.newIdentifier("gravity_space"))));
+		RadiusUtils.forBlockPosInCubicRadius(pos, 10, (blockPos) -> BiomeUtils.changeBiomeForBlock(
+				world,
+				blockPos,
+				BiomeUtils.getBiome(world, Utils.newIdentifier("gravity_space")))
+		);
 
 		return ActionResult.SUCCESS;
 	}
