@@ -2,8 +2,8 @@ package com.mmodding.echoes_of_gravity.init;
 
 import com.mmodding.echoes_of_gravity.Utils;
 import com.mmodding.echoes_of_gravity.structures.OldDragonMonument;
-import com.mmodding.mmodding_lib.lib.initializers.ElementsInitializer;
-import com.mmodding.mmodding_lib.lib.structures.CustomStructure;
+import com.mmodding.mmodding_lib.library.initializers.ElementsInitializer;
+import com.mmodding.mmodding_lib.library.structures.CustomStructure;
 
 public class Structures implements ElementsInitializer {
 

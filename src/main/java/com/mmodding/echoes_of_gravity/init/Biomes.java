@@ -2,8 +2,8 @@ package com.mmodding.echoes_of_gravity.init;
 
 import com.mmodding.echoes_of_gravity.Utils;
 import com.mmodding.echoes_of_gravity.biome.GravityBiomeCreator;
-import com.mmodding.mmodding_lib.lib.initializers.ElementsInitializer;
-import com.mmodding.mmodding_lib.lib.utils.RegistrationUtils;
+import com.mmodding.mmodding_lib.library.initializers.ElementsInitializer;
+import com.mmodding.mmodding_lib.library.utils.RegistrationUtils;
 import net.minecraft.world.biome.Biome;
 
 public class Biomes implements ElementsInitializer {

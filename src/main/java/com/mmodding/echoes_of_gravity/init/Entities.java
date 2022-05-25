@@ -2,8 +2,8 @@ package com.mmodding.echoes_of_gravity.init;
 
 import com.mmodding.echoes_of_gravity.Utils;
 import com.mmodding.echoes_of_gravity.entities.OldDragonLightningEntity;
-import com.mmodding.mmodding_lib.lib.initializers.ElementsInitializer;
-import com.mmodding.mmodding_lib.lib.utils.RegistrationUtils;
+import com.mmodding.mmodding_lib.library.initializers.ElementsInitializer;
+import com.mmodding.mmodding_lib.library.utils.RegistrationUtils;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;

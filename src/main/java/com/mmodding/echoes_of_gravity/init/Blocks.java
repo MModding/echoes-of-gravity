@@ -4,10 +4,10 @@ import com.mmodding.echoes_of_gravity.Utils;
 import com.mmodding.echoes_of_gravity.blocks.EnergyExtractor;
 import com.mmodding.echoes_of_gravity.blocks.GravityPedestal;
 import com.mmodding.echoes_of_gravity.blocks.ReinforcedGravityBlock;
-import com.mmodding.mmodding_lib.lib.blocks.CustomBlock;
-import com.mmodding.mmodding_lib.lib.blocks.CustomStairsBlock;
-import com.mmodding.mmodding_lib.lib.initializers.ClientElementsInitializer;
-import com.mmodding.mmodding_lib.lib.initializers.ElementsInitializer;
+import com.mmodding.mmodding_lib.library.blocks.CustomBlock;
+import com.mmodding.mmodding_lib.library.blocks.CustomStairsBlock;
+import com.mmodding.mmodding_lib.library.initializers.ClientElementsInitializer;
+import com.mmodding.mmodding_lib.library.initializers.ElementsInitializer;
 import net.minecraft.block.Material;
 import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 

@@ -1,6 +1,6 @@
 package com.mmodding.echoes_of_gravity.blocks;
 
-import com.mmodding.mmodding_lib.lib.blocks.CustomBlock;
+import com.mmodding.mmodding_lib.library.blocks.CustomBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;

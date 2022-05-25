@@ -1,6 +1,6 @@
 package com.mmodding.echoes_of_gravity.structures;
 
-import com.mmodding.mmodding_lib.lib.structures.CustomStructure;
+import com.mmodding.mmodding_lib.library.structures.CustomStructure;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.structure.PostPlacementProcessor;
