@@ -20,6 +20,7 @@ public class EchoesOfGravityClient implements MModdingClientModInitializer {
 	public List<ClientElementsInitializer> getClientElementsInitializers() {
 		List<ClientElementsInitializer> clientInitializers = new ArrayList<>();
 		clientInitializers.add(new Blocks());
+		clientInitializers.add(new ClientPacketReceivers());
 		return clientInitializers;
 	}
 

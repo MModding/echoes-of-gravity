@@ -7,7 +7,17 @@ import com.mmodding.mmodding_lib.library.initializers.ElementsInitializer;
 import com.mmodding.mmodding_lib.library.utils.BiomeUtils;
 import com.mmodding.mmodding_lib.library.utils.RadiusUtils;
 import net.minecraft.block.DragonEggBlock;
+import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.packet.s2c.play.ChunkDataS2CPacket;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.math.ChunkPos;
+import org.quiltmc.qsl.networking.api.PacketByteBufs;
+import org.quiltmc.qsl.networking.api.PlayerLookup;
+import org.quiltmc.qsl.networking.api.ServerPlayNetworking;
+
+import java.awt.*;
+import java.util.Objects;
 
 public class Events implements ElementsInitializer {
 
@@ -28,6 +38,14 @@ public class Events implements ElementsInitializer {
 					blockPos,
 					BiomeUtils.getBiome(world, Utils.newIdentifier("gravity_space"))
 			)));
+
+			if (!world.isClient()) {
+				ServerPlayNetworking.send(
+						Objects.requireNonNull(world.getServer()).getPlayerManager().getPlayerList(),
+						Utils.newIdentifier("biomeupdate"),
+						PacketByteBufs.create().writeBlockPos(pos)
+				);
+			}
 
 			return ActionResult.SUCCESS;
 		});

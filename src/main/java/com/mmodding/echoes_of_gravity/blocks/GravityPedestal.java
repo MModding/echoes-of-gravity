@@ -21,18 +21,6 @@ public class GravityPedestal extends CustomBlock {
 		super(settings, hasItem, itemGroup);
 		this.setDefaultState(this.getDefaultState().with(HAS_DRAGON_EGG, false));
 	}
-//
-//	@Override
-//	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-//
-//		RadiusUtils.forBlockPosInCubicRadius(pos, 10, (blockPos) -> BiomeUtils.changeBiomeForBlock(
-//				world,
-//				blockPos,
-//				BiomeUtils.getBiome(world, Utils.newIdentifier("gravity_space")))
-//		);
-//
-//		return ActionResult.SUCCESS;
-//	}
 
 	@Override
 	public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
