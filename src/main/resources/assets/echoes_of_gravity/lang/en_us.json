@@ -1,7 +1,23 @@
 {
+  "block.echoes_of_gravity.celestine_ore": "Celestine Ore",
   "block.echoes_of_gravity.energy_extractor": "Energy Extractor",
   "block.echoes_of_gravity.gravity_pedestal": "Gravity Pedestal",
+  "block.echoes_of_gravity.meteor_salt_block": "Meteor Salt",
   "block.echoes_of_gravity.reinforced_gravity_block": "Reinforced Gravity Block",
   "block.echoes_of_gravity.reinforced_gravity_stairs": "Reinforced Gravity Stairs",
+  "config.echoes_of_gravity_chapter_one.dragonMonumentXSpawnCoordinate": "Dragon Monument X Spawn Coordinate",
+  "config.echoes_of_gravity_chapter_one.dragonMonumentZSpawnCoordinate": "Dragon Monument Z Spawn Coordinate",
+  "item.echoes_of_gravity.celestine": "Celestine",
+  "item.echoes_of_gravity.celestine_axe": "Celestine Axe",
+  "item.echoes_of_gravity.celestine_boots": "Celestine Boots",
+  "item.echoes_of_gravity.celestine_chestplate": "Celestine Chestplate",
+  "item.echoes_of_gravity.celestine_helmet": "Celestine Helmet",
+  "item.echoes_of_gravity.celestine_hoe": "Celestine Hoe",
+  "item.echoes_of_gravity.celestine_leggings": "Celestine Leggings",
+  "item.echoes_of_gravity.celestine_pickaxe": "Celestine Pickaxe",
+  "item.echoes_of_gravity.celestine_shovel": "Celestine Shovel",
+  "item.echoes_of_gravity.celestine_sword": "Celestine Sword",
+  "item.echoes_of_gravity.salt_stick": "Salt Stick",
+  "item.echoes_of_gravity.meteor_salt": "Meteor Salt",
   "itemGroup.echoes_of_gravity.chapter_one": "Echoes of Gravity: Dragons History"
 }

@@ -4,10 +4,12 @@ import com.mmodding.echoes_of_gravity.client.renderers.OldDragonLightningRendere
 import com.mmodding.echoes_of_gravity.init.Blocks;
 import com.mmodding.echoes_of_gravity.init.Entities;
 import com.mmodding.mmodding_lib.library.base.MModdingClientModInitializer;
+import com.mmodding.mmodding_lib.library.config.Config;
 import com.mmodding.mmodding_lib.library.initializers.ClientElementsInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import org.jetbrains.annotations.Nullable;
 import org.quiltmc.loader.api.ModContainer;
 
 import java.util.ArrayList;
@@ -22,6 +24,12 @@ public class EchoesOfGravityClient implements MModdingClientModInitializer {
 		clientInitializers.add(new Blocks());
 		clientInitializers.add(new ClientPacketReceivers());
 		return clientInitializers;
+	}
+
+	@Nullable
+	@Override
+	public Config getClientConfig() {
+		return null;
 	}
 
 	@Override

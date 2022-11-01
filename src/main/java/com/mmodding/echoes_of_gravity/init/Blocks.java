@@ -9,6 +9,7 @@ import com.mmodding.mmodding_lib.library.blocks.CustomStairsBlock;
 import com.mmodding.mmodding_lib.library.initializers.ClientElementsInitializer;
 import com.mmodding.mmodding_lib.library.initializers.ElementsInitializer;
 import net.minecraft.block.Material;
+import net.minecraft.sound.BlockSoundGroup;
 import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 
 public class Blocks implements ElementsInitializer, ClientElementsInitializer {
@@ -22,7 +23,7 @@ public class Blocks implements ElementsInitializer, ClientElementsInitializer {
 	);
 
 	public static final CustomBlock ENERGY_EXTRACTOR = new EnergyExtractor(
-			QuiltBlockSettings.of(Material.METAL)
+			QuiltBlockSettings.of(Material.STONE)
 					.strength(-1, 3600000)
 					.luminance(state -> state.get(EnergyExtractor.WORKING) ? 10 : 0),
 			true,
@@ -40,10 +41,25 @@ public class Blocks implements ElementsInitializer, ClientElementsInitializer {
 
 	public static final CustomStairsBlock REINFORCED_GRAVITY_STAIRS = new CustomStairsBlock(
 			REINFORCED_GRAVITY_BLOCK.getDefaultState(),
-			QuiltBlockSettings.of(Material.METAL)
+			QuiltBlockSettings.of(Material.GLASS)
 					.strength(-1, 3600000)
 					.luminance(5)
 					.nonOpaque(),
+			true,
+			Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
+	);
+
+	public static final CustomBlock METEOR_SALT_BLOCK = new CustomBlock(
+			QuiltBlockSettings.of(Material.STONE).strength(0.5F,10).sounds(BlockSoundGroup.SOUL_SOIL),
+			true,
+			Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
+	);
+
+	public static final CustomBlock CELESTINE_ORE = new CustomBlock(
+			QuiltBlockSettings.of(Material.STONE)
+					.strength(1, 10)
+					.sounds(BlockSoundGroup.SOUL_SOIL)
+					.requiresTool(),
 			true,
 			Tabs.ECHOES_OF_GRAVITY_CHAPTER_I
 	);
@@ -54,6 +70,9 @@ public class Blocks implements ElementsInitializer, ClientElementsInitializer {
 		ENERGY_EXTRACTOR.register(Utils.newIdentifier("energy_extractor"));
 		REINFORCED_GRAVITY_BLOCK.register(Utils.newIdentifier("reinforced_gravity_block"));
 		REINFORCED_GRAVITY_STAIRS.register(Utils.newIdentifier("reinforced_gravity_stairs"));
+
+		METEOR_SALT_BLOCK.register(Utils.newIdentifier("meteor_salt_block"));
+		CELESTINE_ORE.register(Utils.newIdentifier("celestine_ore"));
 	}
 
 	@Override

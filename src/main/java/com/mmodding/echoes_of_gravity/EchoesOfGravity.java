@@ -3,7 +3,9 @@ package com.mmodding.echoes_of_gravity;
 import com.mmodding.echoes_of_gravity.init.*;
 import com.mmodding.mmodding_lib.library.base.MModdingModContainer;
 import com.mmodding.mmodding_lib.library.base.MModdingModInitializer;
+import com.mmodding.mmodding_lib.library.config.Config;
 import com.mmodding.mmodding_lib.library.initializers.ElementsInitializer;
+import org.jetbrains.annotations.Nullable;
 import org.quiltmc.loader.api.ModContainer;
 
 import java.util.ArrayList;
@@ -19,10 +21,15 @@ public class EchoesOfGravity implements MModdingModInitializer {
 		initializers.add(new Blocks());
 		initializers.add(new Items());
 		initializers.add(new Entities());
-		initializers.add(new Structures());
 		initializers.add(new Biomes());
 		initializers.add(new Events());
 		return initializers;
+	}
+
+	@Nullable
+	@Override
+	public Config getConfig() {
+		return new EchoesOfGravityConfig();
 	}
 
 	@Override

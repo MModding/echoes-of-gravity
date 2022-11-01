@@ -38,7 +38,7 @@
 			},
 			{
 				"id": "mmodding_lib",
-				"versions": ">=0.0.1-alpha"
+				"versions": ">=0.1.0-beta"
 			}
 		]
 	},

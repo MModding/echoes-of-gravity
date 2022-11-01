@@ -9,5 +9,4 @@ public class Utils {
 	public static Identifier newIdentifier(String path) {
 		return new Identifier(Utils.modIdentifier, path);
 	}
-
 }

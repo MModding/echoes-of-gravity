@@ -11,8 +11,8 @@ public class ClientPacketReceivers implements ClientElementsInitializer {
 	public void registerClient() {
 		ClientPlayNetworking.registerGlobalReceiver(Utils.newIdentifier("biomeupdate"), (client, handler, buf, responseSender) -> {
 			OldDragonMonumentCallback.EVENT.invoker().interact(client.world, buf.readBlockPos());
-			client.execute(client.worldRenderer::reloadTransparencyShader);
-			client.worldRenderer.reload(client.getResourceManager());
+			handler.getWorld().reloadColor();
+			client.execute(() -> client.gameRenderer.reload(client.getResourceManager()));
 		});
 	}
 }
