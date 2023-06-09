@@ -1,6 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "echoes_of_gravity:block/energy_extractor_working"
+    "up": "echoes_of_gravity:block/energy_extractor_working_top",
+    "down": "echoes_of_gravity:block/energy_extractor_working_bottom",
+    "north": "echoes_of_gravity:block/energy_extractor_working_side",
+    "south": "echoes_of_gravity:block/energy_extractor_working_side",
+    "west": "echoes_of_gravity:block/energy_extractor_working_side",
+    "east": "echoes_of_gravity:block/energy_extractor_working_side",
+    "particle": "echoes_of_gravity:block/energy_extractor_working_top"
   }
 }
