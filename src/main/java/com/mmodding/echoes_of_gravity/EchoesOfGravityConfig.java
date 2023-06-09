@@ -2,8 +2,8 @@ package com.mmodding.echoes_of_gravity;
 
 import com.mmodding.mmodding_lib.library.config.Config;
 import com.mmodding.mmodding_lib.library.config.ConfigObject;
-import com.mmodding.mmodding_lib.library.config.ConfigScreen;
-import com.mmodding.mmodding_lib.library.config.ConfigScreenOptions;
+import com.mmodding.mmodding_lib.library.config.screen.ConfigScreen;
+import com.mmodding.mmodding_lib.library.config.screen.ConfigScreenOptions;
 import net.minecraft.text.Text;
 
 public class EchoesOfGravityConfig implements Config {

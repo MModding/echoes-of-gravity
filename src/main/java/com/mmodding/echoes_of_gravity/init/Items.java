@@ -6,73 +6,74 @@ import com.mmodding.echoes_of_gravity.materials.armors.CelestineArmorMaterial;
 import com.mmodding.echoes_of_gravity.materials.tools.CelestineToolMaterial;
 import com.mmodding.mmodding_lib.library.initializers.ElementsInitializer;
 import com.mmodding.mmodding_lib.library.items.*;
+import com.mmodding.mmodding_lib.library.items.settings.AdvancedItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 
 public class Items implements ElementsInitializer {
 
-	public static final CustomItem METEOR_SALT = new CustomItem(new CustomItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I));
+	public static final CustomItem METEOR_SALT = new CustomItem(new AdvancedItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I));
 
-	public static final CustomItem SALT_STICK = new SaltStick(new CustomItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I));
+	public static final CustomItem SALT_STICK = new SaltStick(new AdvancedItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I));
 
-	public static final CustomItem CELESTINE = new CustomItem(new CustomItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I));
+	public static final CustomItem CELESTINE = new CustomItem(new AdvancedItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I));
 
 	public static final CustomSwordItem CELESTINE_SWORD = new CustomSwordItem(
 			CelestineToolMaterial.INSTANCE,
 			3,
 			-2.4F,
-			new CustomItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomPickaxeItem CELESTINE_PICKAXE = new CustomPickaxeItem(
 			CelestineToolMaterial.INSTANCE,
 			1,
 			-2.8F,
-			new CustomItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomAxeItem CELESTINE_AXE = new CustomAxeItem(
 			CelestineToolMaterial.INSTANCE,
 			7,
 			-3.2F,
-			new CustomItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomShovelItem CELESTINE_SHOVEL = new CustomShovelItem(
 			CelestineToolMaterial.INSTANCE,
 			1.5F,
 			-3.0F,
-			new CustomItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomHoeItem CELESTINE_HOE = new CustomHoeItem(
 			CelestineToolMaterial.INSTANCE,
 			0,
 			-3.0F,
-			new CustomItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomArmorItem CELESTINE_HELMET = new CustomArmorItem(
 			CelestineArmorMaterial.INSTANCE,
 			EquipmentSlot.HEAD,
-			new CustomItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomArmorItem CELESTINE_CHESTPLATE = new CustomArmorItem(
 			CelestineArmorMaterial.INSTANCE,
 			EquipmentSlot.CHEST,
-			new CustomItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomArmorItem CELESTINE_LEGGINGS = new CustomArmorItem(
 			CelestineArmorMaterial.INSTANCE,
 			EquipmentSlot.LEGS,
-			new CustomItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomArmorItem CELESTINE_BOOTS = new CustomArmorItem(
 			CelestineArmorMaterial.INSTANCE,
 			EquipmentSlot.FEET,
-			new CustomItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().group(Tabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	@Override
