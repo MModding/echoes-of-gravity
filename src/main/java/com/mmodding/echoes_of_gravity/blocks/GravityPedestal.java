@@ -1,5 +1,6 @@
 package com.mmodding.echoes_of_gravity.blocks;
 
+import com.mmodding.echoes_of_gravity.EchoesOfGravity;
 import com.mmodding.echoes_of_gravity.events.OldDragonMonumentCallback;
 import com.mmodding.mmodding_lib.library.blocks.CustomBlock;
 import net.minecraft.block.Block;
@@ -10,6 +11,7 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 
@@ -29,7 +31,8 @@ public class GravityPedestal extends CustomBlock {
 
 	@Override
 	public void neighborUpdate(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {
-		OldDragonMonumentCallback.EVENT.invoker().interact(world, pos);
+		if (world.getBlockState(pos.up()).getBlock() instanceof DragonEggBlock) OldDragonMonumentCallback.EVENT.invoker().interact(world, pos);
+		EchoesOfGravity.mod.getLogger().info(world.getRegistryManager().get(Registry.BIOME_KEY).getEntries().toString());
 	}
 
 	@Override

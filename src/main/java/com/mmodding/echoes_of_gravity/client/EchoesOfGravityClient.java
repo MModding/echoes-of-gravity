@@ -1,8 +1,8 @@
 package com.mmodding.echoes_of_gravity.client;
 
 import com.mmodding.echoes_of_gravity.client.renderers.OldDragonLightningRenderer;
-import com.mmodding.echoes_of_gravity.init.Blocks;
-import com.mmodding.echoes_of_gravity.init.Entities;
+import com.mmodding.echoes_of_gravity.init.EOGBlocks;
+import com.mmodding.echoes_of_gravity.init.EOGEntities;
 import com.mmodding.mmodding_lib.library.base.MModdingClientModInitializer;
 import com.mmodding.mmodding_lib.library.config.Config;
 import com.mmodding.mmodding_lib.library.initializers.ClientElementsInitializer;
@@ -21,7 +21,7 @@ public class EchoesOfGravityClient implements MModdingClientModInitializer {
 	@Override
 	public List<ClientElementsInitializer> getClientElementsInitializers() {
 		List<ClientElementsInitializer> clientInitializers = new ArrayList<>();
-		clientInitializers.add(new Blocks());
+		clientInitializers.add(new EOGBlocks());
 		clientInitializers.add(new ClientPacketReceivers());
 		return clientInitializers;
 	}
@@ -36,6 +36,6 @@ public class EchoesOfGravityClient implements MModdingClientModInitializer {
 	public void onInitializeClient(ModContainer modContainer) {
 		MModdingClientModInitializer.super.onInitializeClient(modContainer);
 
-		EntityRendererRegistry.register(Entities.OLD_DRAGON_LIGHTNING, OldDragonLightningRenderer::new);
+		EntityRendererRegistry.register(EOGEntities.OLD_DRAGON_LIGHTNING, OldDragonLightningRenderer::new);
 	}
 }

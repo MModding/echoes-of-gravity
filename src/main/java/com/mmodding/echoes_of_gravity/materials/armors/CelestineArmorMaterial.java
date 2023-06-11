@@ -1,6 +1,6 @@
 package com.mmodding.echoes_of_gravity.materials.armors;
 
-import com.mmodding.echoes_of_gravity.init.Items;
+import com.mmodding.echoes_of_gravity.init.EOGItems;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -33,7 +33,7 @@ public class CelestineArmorMaterial implements ArmorMaterial {
 
 	@Override
 	public Ingredient getRepairIngredient() {
-		return Ingredient.ofItems(Items.CELESTINE);
+		return Ingredient.ofItems(EOGItems.CELESTINE);
 	}
 
 	@Override

@@ -1,6 +1,6 @@
 package com.mmodding.echoes_of_gravity.items;
 
-import com.mmodding.echoes_of_gravity.init.Blocks;
+import com.mmodding.echoes_of_gravity.init.EOGBlocks;
 import com.mmodding.mmodding_lib.library.items.CustomItem;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
@@ -16,16 +16,16 @@ public class SaltStick extends CustomItem {
 
 	@Override
 	public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
-		return state.isOf(Blocks.CELESTINE_ORE) || super.postMine(stack, world, state, pos, miner);
+		return state.isOf(EOGBlocks.CELESTINE_ORE) || super.postMine(stack, world, state, pos, miner);
 	}
 
 	@Override
 	public boolean isSuitableFor(BlockState state) {
-		return state.isOf(Blocks.CELESTINE_ORE);
+		return state.isOf(EOGBlocks.CELESTINE_ORE);
 	}
 
 	@Override
 	public float getMiningSpeedMultiplier(ItemStack stack, BlockState state) {
-		return state.isOf(Blocks.CELESTINE_ORE) ? 2.0F : super.getMiningSpeedMultiplier(stack, state);
+		return state.isOf(EOGBlocks.CELESTINE_ORE) ? 2.0F : super.getMiningSpeedMultiplier(stack, state);
 	}
 }

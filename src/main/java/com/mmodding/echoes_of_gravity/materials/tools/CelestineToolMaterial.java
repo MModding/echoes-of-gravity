@@ -1,6 +1,6 @@
 package com.mmodding.echoes_of_gravity.materials.tools;
 
-import com.mmodding.echoes_of_gravity.init.Items;
+import com.mmodding.echoes_of_gravity.init.EOGItems;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -35,6 +35,6 @@ public class CelestineToolMaterial implements ToolMaterial {
 
 	@Override
 	public Ingredient getRepairIngredient() {
-		return Ingredient.ofItems(Items.CELESTINE);
+		return Ingredient.ofItems(EOGItems.CELESTINE);
 	}
 }
