@@ -1,6 +1,8 @@
 package com.mmodding.echoes_of_gravity.client;
 
-import com.mmodding.echoes_of_gravity.client.renderers.OldDragonLightningRenderer;
+import com.mmodding.echoes_of_gravity.client.entities.renderers.OldDragonLightningRenderer;
+import com.mmodding.echoes_of_gravity.client.init.ClientPacketReceivers;
+import com.mmodding.echoes_of_gravity.client.init.SkyRenderers;
 import com.mmodding.echoes_of_gravity.init.EOGBlocks;
 import com.mmodding.echoes_of_gravity.init.EOGEntities;
 import com.mmodding.mmodding_lib.library.base.MModdingClientModInitializer;
@@ -23,6 +25,7 @@ public class EchoesOfGravityClient implements MModdingClientModInitializer {
 		List<ClientElementsInitializer> clientInitializers = new ArrayList<>();
 		clientInitializers.add(new EOGBlocks());
 		clientInitializers.add(new ClientPacketReceivers());
+		clientInitializers.add(new SkyRenderers());
 		return clientInitializers;
 	}
 

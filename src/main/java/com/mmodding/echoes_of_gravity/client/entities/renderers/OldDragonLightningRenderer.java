@@ -1,4 +1,4 @@
-package com.mmodding.echoes_of_gravity.client.renderers;
+package com.mmodding.echoes_of_gravity.client.entities.renderers;
 
 import com.mmodding.echoes_of_gravity.entities.OldDragonLightningEntity;
 import net.fabricmc.api.EnvType;

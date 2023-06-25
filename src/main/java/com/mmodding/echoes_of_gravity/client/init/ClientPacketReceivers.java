@@ -1,4 +1,4 @@
-package com.mmodding.echoes_of_gravity.client;
+package com.mmodding.echoes_of_gravity.client.init;
 
 import com.mmodding.echoes_of_gravity.EchoesOfGravity;
 import com.mmodding.echoes_of_gravity.events.OldDragonMonumentCallback;

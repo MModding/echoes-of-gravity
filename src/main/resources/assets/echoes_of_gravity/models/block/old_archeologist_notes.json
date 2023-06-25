@@ -1,0 +1,7 @@
+{
+  "parent": "echoes_of_gravity:custom/old_archeologist_notes",
+  "textures": {
+    "0": "echoes_of_gravity:block/old_archeologist_notes",
+    "particle": "echoes_of_gravity:block/old_archeologist_notes"
+  }
+}
