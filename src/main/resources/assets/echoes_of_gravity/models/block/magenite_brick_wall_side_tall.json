@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "echoes_of_gravity:block/magenite_bricks",
+    "particle": "echoes_of_gravity:block/magenite_bricks"
+  }
+}

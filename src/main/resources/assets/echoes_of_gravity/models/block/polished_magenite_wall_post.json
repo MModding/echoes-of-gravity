@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "echoes_of_gravity:block/polished_magenite",
+    "particle": "echoes_of_gravity:block/polished_magenite"
+  }
+}

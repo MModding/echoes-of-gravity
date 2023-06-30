@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "echoes_of_gravity:block/magenite_bricks",
+    "particle": "echoes_of_gravity:block/magenite_bricks"
+  }
+}

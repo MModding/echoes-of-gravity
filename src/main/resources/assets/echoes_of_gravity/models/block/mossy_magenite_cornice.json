@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "up": "echoes_of_gravity:block/mossy_polished_magenite",
+    "down": "echoes_of_gravity:block/mossy_magenite_bricks",
+    "north": "echoes_of_gravity:block/mossy_magenite_cornice",
+    "south": "echoes_of_gravity:block/mossy_magenite_cornice",
+    "west": "echoes_of_gravity:block/mossy_magenite_cornice",
+    "east": "echoes_of_gravity:block/mossy_magenite_cornice",
+    "particle": "echoes_of_gravity:block/moss_covered_magenite"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "up": "minecraft:block/moss_block",
+    "down": "echoes_of_gravity:block/magenite",
+    "north": "echoes_of_gravity:block/moss_covered_magenite",
+    "south": "echoes_of_gravity:block/moss_covered_magenite",
+    "west": "echoes_of_gravity:block/moss_covered_magenite",
+    "east": "echoes_of_gravity:block/moss_covered_magenite",
+    "particle": "echoes_of_gravity:block/moss_covered_magenite"
+  }
+}

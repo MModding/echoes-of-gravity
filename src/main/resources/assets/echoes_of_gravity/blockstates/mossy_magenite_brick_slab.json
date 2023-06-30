@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "echoes_of_gravity:block/mossy_magenite_brick_slab"
+    },
+    "type=top": {
+      "model": "echoes_of_gravity:block/mossy_magenite_brick_slab_top"
+    },
+    "type=double": {
+      "model": "echoes_of_gravity:block/mossy_magenite_brick_slab_full"
+    }
+  }
+}

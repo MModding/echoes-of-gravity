@@ -11,9 +11,12 @@ import net.minecraft.entity.SpawnGroup;
 
 public class EOGEntities implements ElementsInitializer {
 
-	public static final EntityType<OldDragonLightningEntity> OLD_DRAGON_LIGHTNING = FabricEntityTypeBuilder
-			.create(SpawnGroup.MISC, OldDragonLightningEntity::new).disableSaving().dimensions(EntityDimensions.fixed(0.0F, 0.0F))
-			.trackRangeBlocks(16).trackedUpdateRate(Integer.MAX_VALUE).build();
+	public static final EntityType<OldDragonLightningEntity> OLD_DRAGON_LIGHTNING = FabricEntityTypeBuilder.create(SpawnGroup.MISC, OldDragonLightningEntity::new)
+		.disableSaving()
+		.dimensions(EntityDimensions.fixed(0.0F, 0.0F))
+		.trackRangeChunks(8)
+		.trackedUpdateRate(Integer.MAX_VALUE)
+		.build();
 
 	@Override
 	public void register() {

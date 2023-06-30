@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "echoes_of_gravity:block/polished_magenite_slab"
+    },
+    "type=top": {
+      "model": "echoes_of_gravity:block/polished_magenite_slab_top"
+    },
+    "type=double": {
+      "model": "echoes_of_gravity:block/polished_magenite_slab_full"
+    }
+  }
+}

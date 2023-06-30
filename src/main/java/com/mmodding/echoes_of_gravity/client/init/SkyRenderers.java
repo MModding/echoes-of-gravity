@@ -10,7 +10,7 @@ public class SkyRenderers implements ClientElementsInitializer {
 
 	@Override
 	public void registerClient() {
-		DimensionRenderingRegistry.registerSkyRenderer(null, gravitySpaceRenderer);
+		// DimensionRenderingRegistry.registerSkyRenderer(null, gravitySpaceRenderer);
 	}
 
 	public static void renderGravitySpaceSky(WorldRenderContext context) {}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "up": "echoes_of_gravity:block/polished_magenite",
+    "down": "echoes_of_gravity:block/chiseled_magenite",
+    "north": "echoes_of_gravity:block/chiseled_magenite_plinth",
+    "south": "echoes_of_gravity:block/chiseled_magenite_plinth",
+    "west": "echoes_of_gravity:block/chiseled_magenite_plinth",
+    "east": "echoes_of_gravity:block/chiseled_magenite_plinth",
+    "particle": "echoes_of_gravity:block/chiseled_magenite_plinth"
+  }
+}

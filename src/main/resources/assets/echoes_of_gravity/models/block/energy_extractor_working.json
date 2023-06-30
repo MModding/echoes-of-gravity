@@ -1,12 +1,8 @@
 {
-  "parent": "block/cube",
+  "parent": "block/template_piston",
   "textures": {
-    "up": "echoes_of_gravity:block/energy_extractor_working_top",
-    "down": "echoes_of_gravity:block/energy_extractor_working_bottom",
-    "north": "echoes_of_gravity:block/energy_extractor_working_side",
-    "south": "echoes_of_gravity:block/energy_extractor_working_side",
-    "west": "echoes_of_gravity:block/energy_extractor_working_side",
-    "east": "echoes_of_gravity:block/energy_extractor_working_side",
-    "particle": "echoes_of_gravity:block/energy_extractor_working_top"
+    "platform": "echoes_of_gravity:block/energy_extractor_working_top",
+    "bottom": "echoes_of_gravity:block/energy_extractor_working_bottom",
+    "side": "echoes_of_gravity:block/energy_extractor_working_side"
   }
 }
