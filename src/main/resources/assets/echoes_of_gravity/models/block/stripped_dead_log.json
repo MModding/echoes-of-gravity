@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "echoes_of_gravity:block/stripped_dead_log_top",
+    "side": "echoes_of_gravity:block/stripped_dead_log"
+  }
+}

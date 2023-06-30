@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "up": "echoes_of_gravity:block/dead_log_top",
+    "down": "echoes_of_gravity:block/dead_log_top",
+    "north": "echoes_of_gravity:block/holed_dead_log",
+    "south": "echoes_of_gravity:block/dead_log",
+    "west": "echoes_of_gravity:block/dead_log",
+    "east": "echoes_of_gravity:block/dead_log",
+    "particle": "echoes_of_gravity:block/holed_dead_log"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "echoes_of_gravity:block/dead_planks",
+    "particle": "echoes_of_gravity:block/dead_planks"
+  }
+}

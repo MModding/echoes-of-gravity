@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "echoes_of_gravity:block/dead_plank_slab"
+    },
+    "type=top": {
+      "model": "echoes_of_gravity:block/dead_plank_slab_top"
+    },
+    "type=double": {
+      "model": "echoes_of_gravity:block/dead_plank_slab_full"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_pressed",
+  "textures": {
+    "texture": "echoes_of_gravity:block/dead_planks"
+  }
+}

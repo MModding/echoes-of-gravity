@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "echoes_of_gravity:block/eroded_dead_log",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "echoes_of_gravity:block/eroded_dead_log",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "echoes_of_gravity:block/eroded_dead_log"
+    },
+    "facing=west": {
+      "model": "echoes_of_gravity:block/eroded_dead_log",
+      "y": 90
+    }
+  }
+}

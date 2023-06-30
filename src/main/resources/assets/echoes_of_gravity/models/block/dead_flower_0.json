@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "echoes_of_gravity:block/dead_flower_0"
+  }
+}

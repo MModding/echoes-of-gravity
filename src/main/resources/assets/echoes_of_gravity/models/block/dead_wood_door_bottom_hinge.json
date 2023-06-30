@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom_left_open",
+  "textures": {
+    "top": "echoes_of_gravity:block/dead_wood_door_top",
+    "bottom": "echoes_of_gravity:block/dead_wood_door_bottom"
+  }
+}

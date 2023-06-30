@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "up": "echoes_of_gravity:block/dead_grass_block_top",
+    "down": "echoes_of_gravity:block/dead_dirt",
+    "north": "echoes_of_gravity:block/dead_grass_block_side",
+    "south": "echoes_of_gravity:block/dead_grass_block_side",
+    "west": "echoes_of_gravity:block/dead_grass_block_side",
+    "east": "echoes_of_gravity:block/dead_grass_block_side",
+    "particle": "echoes_of_gravity:block/dead_grass_block_side"
+  }
+}
