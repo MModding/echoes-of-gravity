@@ -5,6 +5,7 @@ import com.mmodding.echoes_of_gravity.blocks.EnergyExtractor;
 import com.mmodding.echoes_of_gravity.blocks.GravityPedestal;
 import com.mmodding.echoes_of_gravity.blocks.ReinforcedGravityBlock;
 import com.mmodding.mmodding_lib.library.blocks.*;
+import com.mmodding.mmodding_lib.library.blocks.settings.DefaultBlockSettings;
 import com.mmodding.mmodding_lib.library.initializers.ClientElementsInitializer;
 import com.mmodding.mmodding_lib.library.initializers.ElementsInitializer;
 import net.minecraft.block.Material;
@@ -429,6 +430,12 @@ public class EOGBlocks implements ElementsInitializer, ClientElementsInitializer
 		EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I
 	);
 
+	public static final CustomBlock FULGURITE = new CustomBlock(
+		DefaultBlockSettings.STONE_SETTINGS,
+		true,
+		EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I
+	);
+
 	public static final CustomBlock CELESTINE_ORE = new CustomBlock(
 		QuiltBlockSettings.of(Material.STONE)
 			.strength(1, 10)
@@ -524,6 +531,7 @@ public class EOGBlocks implements ElementsInitializer, ClientElementsInitializer
 		DEAD_WOOD_DOOR.register(EchoesOfGravity.createId("dead_wood_door"));
 		DEAD_WOOD_TRAPDOOR.register(EchoesOfGravity.createId("dead_wood_trapdoor"));
 		METEOR_SALT_BLOCK.register(EchoesOfGravity.createId("meteor_salt_block"));
+		FULGURITE.register(EchoesOfGravity.createId("fulgurite"));
 		CELESTINE_ORE.register(EchoesOfGravity.createId("celestine_ore"));
 		RAW_CELESTINE_BLOCK.register(EchoesOfGravity.createId("raw_celestine_block"));
 		CELESTINE_BLOCK.register(EchoesOfGravity.createId("celestine_block"));

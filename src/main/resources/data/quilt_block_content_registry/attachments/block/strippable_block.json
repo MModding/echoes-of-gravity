@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": {
-    "echoes_of_gravity:dead_wood": "echoes_of_gravity:stripped_dead_wood",
-    "echoes_of_gravity:dead_log": "echoes_of_gravity:stripped_dead_log",
-    "echoes_of_gravity:holed_dead_log": "echoes_of_gravity:stripped_dead_log",
-    "echoes_of_gravity:eroded_dead_log": "echoes_of_gravity:stripped_dead_log"
-  }
-}

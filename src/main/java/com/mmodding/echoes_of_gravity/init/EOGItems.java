@@ -4,6 +4,7 @@ import com.mmodding.echoes_of_gravity.EchoesOfGravity;
 import com.mmodding.echoes_of_gravity.items.SaltStick;
 import com.mmodding.echoes_of_gravity.materials.armors.CelestineArmorMaterial;
 import com.mmodding.echoes_of_gravity.materials.tools.CelestineToolMaterial;
+import com.mmodding.mmodding_lib.library.glint.DefaultGlintPacks;
 import com.mmodding.mmodding_lib.library.initializers.ElementsInitializer;
 import com.mmodding.mmodding_lib.library.items.*;
 import com.mmodding.mmodding_lib.library.items.settings.AdvancedItemSettings;
@@ -21,59 +22,59 @@ public class EOGItems implements ElementsInitializer {
 			CelestineToolMaterial.INSTANCE,
 			3,
 			-2.4F,
-			new AdvancedItemSettings().group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().glintPack(DefaultGlintPacks.LIGHT_BLUE).group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomPickaxeItem CELESTINE_PICKAXE = new CustomPickaxeItem(
 			CelestineToolMaterial.INSTANCE,
 			1,
 			-2.8F,
-			new AdvancedItemSettings().group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().glintPack(DefaultGlintPacks.LIGHT_BLUE).group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomAxeItem CELESTINE_AXE = new CustomAxeItem(
 			CelestineToolMaterial.INSTANCE,
 			7,
 			-3.2F,
-			new AdvancedItemSettings().group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().glintPack(DefaultGlintPacks.LIGHT_BLUE).group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomShovelItem CELESTINE_SHOVEL = new CustomShovelItem(
 			CelestineToolMaterial.INSTANCE,
 			1.5F,
 			-3.0F,
-			new AdvancedItemSettings().group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().glintPack(DefaultGlintPacks.LIGHT_BLUE).group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomHoeItem CELESTINE_HOE = new CustomHoeItem(
 			CelestineToolMaterial.INSTANCE,
 			0,
 			-3.0F,
-			new AdvancedItemSettings().group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().glintPack(DefaultGlintPacks.LIGHT_BLUE).group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomArmorItem CELESTINE_HELMET = new CustomArmorItem(
 			CelestineArmorMaterial.INSTANCE,
 			EquipmentSlot.HEAD,
-			new AdvancedItemSettings().group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().glintPack(DefaultGlintPacks.LIGHT_BLUE).group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomArmorItem CELESTINE_CHESTPLATE = new CustomArmorItem(
 			CelestineArmorMaterial.INSTANCE,
 			EquipmentSlot.CHEST,
-			new AdvancedItemSettings().group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().glintPack(DefaultGlintPacks.LIGHT_BLUE).group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomArmorItem CELESTINE_LEGGINGS = new CustomArmorItem(
 			CelestineArmorMaterial.INSTANCE,
 			EquipmentSlot.LEGS,
-			new AdvancedItemSettings().group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().glintPack(DefaultGlintPacks.LIGHT_BLUE).group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	public static final CustomArmorItem CELESTINE_BOOTS = new CustomArmorItem(
 			CelestineArmorMaterial.INSTANCE,
 			EquipmentSlot.FEET,
-			new AdvancedItemSettings().group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
+			new AdvancedItemSettings().glintPack(DefaultGlintPacks.LIGHT_BLUE).group(EOGTabs.ECHOES_OF_GRAVITY_CHAPTER_I)
 	);
 
 	@Override

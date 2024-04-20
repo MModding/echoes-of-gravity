@@ -1,0 +1,38 @@
+{
+  "dysfunction": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "echoes_of_gravity:dysfunction",
+        "stream": true
+      }
+    ]
+  },
+  "instance_of_gravity": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "echoes_of_gravity:instance_of_gravity",
+        "stream": true
+      }
+    ]
+  },
+  "rush_to_the_echoes": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "echoes_of_gravity:rush_to_the_echoes",
+        "stream": true
+      }
+    ]
+  },
+  "unnamed_universe": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "echoes_of_gravity:unnamed_universe",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -6,20 +6,18 @@ import com.mmodding.echoes_of_gravity.entities.OldDragonLightningEntity;
 import com.mmodding.echoes_of_gravity.events.OldDragonMonumentCallback;
 import com.mmodding.mmodding_lib.library.initializers.ElementsInitializer;
 import com.mmodding.mmodding_lib.library.utils.BiomeUtils;
+import com.mmodding.mmodding_lib.library.utils.ObjectUtils;
 import com.mmodding.mmodding_lib.library.utils.RadiusUtils;
 import com.mmodding.mmodding_lib.library.utils.WorldUtils;
 import net.minecraft.block.DragonEggBlock;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Holder;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.BiomeKeys;
 import org.quiltmc.qsl.lifecycle.api.event.ServerLifecycleEvents;
 import org.quiltmc.qsl.networking.api.PacketByteBufs;
 import org.quiltmc.qsl.networking.api.ServerPlayNetworking;
@@ -29,8 +27,8 @@ import java.util.Objects;
 public class EOGEvents implements ElementsInitializer {
 
 	private void startingServerLifecycle(MinecraftServer world) {
-		Holder<Biome> holder0 = world.getRegistryManager().get(Registry.BIOME_KEY).getOrCreateHolderOrThrow(EOGBiomes.DEAD_GROUND_KEY);
-		Holder<Biome> holder1 = world.getRegistryManager().get(Registry.BIOME_KEY).getOrCreateHolderOrThrow(EOGBiomes.GRAVITY_SPACE_KEY);
+		ObjectUtils.load(world.getRegistryManager().get(Registry.BIOME_KEY).getOrCreateHolderOrThrow(EOGBiomes.DEAD_GROUND_KEY));
+		ObjectUtils.load(world.getRegistryManager().get(Registry.BIOME_KEY).getOrCreateHolderOrThrow(EOGBiomes.GRAVITY_SPACE_KEY));
 	}
 
 	private ActionResult createGravitySpace(WorldAccess world, BlockPos pos) {
@@ -46,11 +44,11 @@ public class EOGEvents implements ElementsInitializer {
 			});
 
 			RadiusUtils.forBlockPosInCubicRadius(
-				pos, 10, (blockPos -> BiomeUtils.changeBiomeForBlock(world, blockPos, BiomeKeys.DARK_FOREST))
+				pos, 10, (blockPos -> BiomeUtils.changeBiomeForBlock(world, blockPos, EOGBiomes.DEAD_GROUND_KEY))
 			);
 
 			RadiusUtils.forBlockPosInCubicRadius(
-				pos.up(35), 25, (blockPos -> BiomeUtils.changeBiomeForBlock(world, blockPos, BiomeKeys.DARK_FOREST))
+				pos.up(35), 25, (blockPos -> BiomeUtils.changeBiomeForBlock(world, blockPos, EOGBiomes.GRAVITY_SPACE_KEY))
 			);
 		};
 
@@ -88,7 +86,7 @@ public class EOGEvents implements ElementsInitializer {
 						world.spawnEntity(oldDragonLightningEntity3);
 
 						WorldUtils.doTaskAfter(serverWorld, 3*20, () -> {
-							WorldUtils.pushExplosion(world, pos.up(), 50.F);
+							WorldUtils.pushExplosion(world, pos.up(), 50.f);
 
 							WorldUtils.doTaskAfter(serverWorld, 2*20, run);
 

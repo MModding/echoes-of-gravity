@@ -9,7 +9,7 @@ import net.minecraft.sound.SoundEvents;
 
 public class CelestineArmorMaterial implements ArmorMaterial {
 
-	public static CelestineArmorMaterial INSTANCE = new CelestineArmorMaterial();
+	public static final CelestineArmorMaterial INSTANCE = new CelestineArmorMaterial();
 
 	@Override
 	public int getDurability(EquipmentSlot slot) {

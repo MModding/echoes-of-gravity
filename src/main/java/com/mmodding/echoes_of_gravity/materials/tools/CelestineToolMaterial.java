@@ -6,7 +6,7 @@ import net.minecraft.recipe.Ingredient;
 
 public class CelestineToolMaterial implements ToolMaterial {
 
-	public static CelestineToolMaterial INSTANCE = new CelestineToolMaterial();
+	public static final CelestineToolMaterial INSTANCE = new CelestineToolMaterial();
 
 	@Override
 	public int getDurability() {

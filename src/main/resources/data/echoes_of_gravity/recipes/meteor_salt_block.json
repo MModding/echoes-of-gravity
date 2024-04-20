@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MM",
+    "MM"
+  ],
+  "key": {
+    "M": {
+      "item": "echoes_of_gravity:meteor_salt"
+    }
+  },
+  "result": {
+    "item": "echoes_of_gravity:meteor_salt_block"
+  }
+}
